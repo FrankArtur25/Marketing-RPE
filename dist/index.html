@@ -33,7 +33,7 @@
                 }
             }</style><div class="content" id="preloader"><div class="loading"><p>Cargando</p><span></span></div></div><section class="banner" id="banner"><div class="fondo-overlay" style="background-image: url('static/portada.png');"><div class="medio w-100"><div class="container"><div class="row"><img src="static/ejecutiva_portada.png" class="citats" width="20%" alt=""> <img src="static/lineas_de_portada.png" class="citats2" width="76%" alt=""><div class="col-md-12 text-center retnec"><h2 class="acas"><span style="color: #ffed00;">¡Saca adelante<br>a tu familia!</span><br>Emprende con nosotros ahora.<div class=""><a href="contacto.html" class="btn btn-banner">Aplica aquí</a></div></h2></div></div></div></div></div></section><style>.citats {
             position: absolute; 
-            margin-top: -17px;
+            margin-top: -33px;
         }
         .citats2 {
             position: absolute; 
@@ -49,7 +49,7 @@
                 opacity: 0;
             }
             .citats2 {
-                    margin-left: -50px;
+                    margin-left: -50px !important;
                     width: 100%;
                     margin-top: 200px;
             }
@@ -73,6 +73,15 @@
             }
             .acas {
                 margin-left: -35px;
+            }
+        }
+    
+        @media (max-width: 1366px) {
+            .citats {
+                margin-top: -10px;
+            }
+            .citats2 {
+                margin-left: 260px;
             }
         }
     
@@ -370,7 +379,7 @@
     .demo::before {
         content: '';
         width: 100%;
-        height: 70%;
+        height: 74%;
         background: rgba(1,1,58,0.93);
         position: absolute;
         left: 0;
@@ -438,7 +447,7 @@
             background-repeat: no-repeat;
         }
         .demo::before {
-            height: 87%;
+            height: 87% !important;
             width: 102%;
         }
         .testimonial .description{
@@ -454,6 +463,12 @@
     @media (max-width: 375px) {
         .demo::before {
             height: 106%;
+        }
+    }
+    
+    @media (max-width: 1366px) {
+        .demo::before {
+            height: 82%;
         }
     }
     
